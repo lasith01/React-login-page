@@ -58,6 +58,11 @@ body {
 .name-fields {
   display: flex;
   gap: 1rem;
+}
+
+.name-field2 {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
 }
 

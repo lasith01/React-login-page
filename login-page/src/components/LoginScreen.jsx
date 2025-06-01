@@ -1,7 +1,6 @@
 import React, { useState} from 'react';
 import axios from '../services/axiosInstance';
 import '../components/LoginScreen.css';
-
 function LoginScreen() {
     const [formData, setFormData] = useState({
         username: 'emilys',
@@ -37,8 +36,10 @@ function LoginScreen() {
                         <input type="text" placeholder='First name' defaultValue="Michal" />
                         <input type="text" placeholder='Last name' defaultValue="Masiak" />
                     </div>
-                    <input type='email' placeholder='Email' defaultValue='michal.masiak@anywhere.co'/>
-                    <input type='password' name='password' placeholder='Password' value={formData.password} onChange={handleChange} required/>
+                    <div className='name-field2'>
+                        <input type='email' placeholder='Email' defaultValue='michal.masiak@anywhere.co'/>
+                        <input type='password' name='password' placeholder='Password' value={formData.password} onChange={handleChange} required/>
+                    </div>
                     <div className='buttons'>
                         <button type='button' className='secondary-btn'>Change method</button>
                         <button type='submit' className='primary-btn'>Create account</button>
