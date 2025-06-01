@@ -3,8 +3,8 @@ import axios from '../services/axiosInstance';
 import '../components/LoginScreen.css';
 function LoginScreen() {
     const [formData, setFormData] = useState({
-        username: '',
-        password: '',
+        username: 'user',
+        password: 'userpass',
         expiresInMins: 30,
     });
 
