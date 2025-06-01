@@ -22,6 +22,20 @@ body {
   text-decoration: none;
 }
 
+.login-link{
+    color: #b8bcbe;
+    text-decoration: none;
+}
+
+.start{
+    font-weight: bold;
+}
+
+.log-in-txt {
+  color: #2d9cdb;
+  text-decoration: none;
+}
+
 .login-container {
   display: flex;
   justify-content: space-between;

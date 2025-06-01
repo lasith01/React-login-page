@@ -30,15 +30,15 @@ function LoginScreen() {
             <div className='form-box'>
                 <p className='start'>START FOR FREE</p>
                 <h2>Create new account<span className='dot'>.</span></h2>
-                <p className='login-link'>Already A Member? <a href="#">Log In</a></p>
+                <p className='login-link'>Already A Member? <a href="#" className='log-in-txt'>Log In</a></p>
                 <form onSubmit={handleSubmit}>
                     <div className='name-fields'>
-                        <input type="text" placeholder='First name' defaultValue="Michal" />
-                        <input type="text" placeholder='Last name' defaultValue="Masiak" />
+                        <input type="text" placeholder='First name'  />
+                        <input type="text" placeholder='Last name'  />
                     </div>
                     <div className='name-field2'>
-                        <input type='email' placeholder='Email' defaultValue='michal.masiak@anywhere.co'/>
-                        <input type='password' name='password' placeholder='Password' value={formData.password} onChange={handleChange} required/>
+                        <input type='email' placeholder='Email' required/>
+                        <input type='password' name='password' placeholder='Password' onChange={handleChange} required/>
                     </div>
                     <div className='buttons'>
                         <button type='button' className='secondary-btn'>Change method</button>
@@ -48,7 +48,7 @@ function LoginScreen() {
                 <p className='message'>{message}</p>
             </div>
             <div className='image-section'>
-                <img src="/assets/login-image.jpg" alt="Login Image" />
+                <image src='/src/assests/login-image.jpg' alt="Login Image" />
         </div>
         </div>
     );
